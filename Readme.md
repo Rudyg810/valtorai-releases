@@ -36,19 +36,26 @@ export AWS_SECRET=[MASKED_AWS_KEY_0]
 
 ## Installation
 
+### Unix (macOS/Linux)
+
+```bash
+curl -O https://raw.githubusercontent.com/Rudyg810/valtorai-releases/refs/heads/main/download.sh
+chmod +x download.sh
+./download.sh
+```
+
 ### macOS (Homebrew)
 
 ```bash
 brew install valtorai/tap/valtor
 ```
 
-### Manual Install
+### Windows
 
-1. Download the appropriate archive for your platform
-2. Extract: `tar -xzf valtor-*.tar.gz` (or unzip for Windows)
-3. Move to PATH: `sudo mv valtor /usr/local/bin/`
-4. Initialize: `valtor init`
-5. Start: `valtor start`
+```powershell
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/Rudyg810/valtorai-releases/refs/heads/main/download.ps1 -OutFile download.ps1
+./download.ps1
+```
 
 ## Downloads
 
