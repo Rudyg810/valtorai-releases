@@ -22,6 +22,7 @@ New-Item -ItemType Directory -Force -Path $tempDir | Out-Null
 New-Item -ItemType Directory -Force -Path $installDir | Out-Null
 
 Write-Host "Downloading $asset..."
+Write-Host "URL: $url"
 Invoke-WebRequest -Uri $url -OutFile "$tempDir\$asset"
 
 Write-Host "Extracting..."
