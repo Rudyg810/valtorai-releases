@@ -30,6 +30,7 @@ INSTALL_DIR="/usr/local/bin"
 TMP_DIR="$(mktemp -d)"
 
 echo "Downloading $ASSET..."
+echo "URL: $URL"
 curl -fsSL "$URL" -o "$TMP_DIR/$ASSET"
 
 echo "Extracting..."
